@@ -1,34 +1,6 @@
-@import 'https://fonts.googleapis.com/css?family=Josefin+Slab';
-
-.section-project {
-  
-  position: relative;
-}
-
-.section__title, .section__subtitle {
-  text-align: center;
-  color: white;
-  display: block;
-}
-
-.section__title {
-  font-size: 3em;
-  line-height: 1;
-  margin: 0 0 20px;
-}
-
-.section__subtitle {
-  font-size: 1.2em;
-  line-height: 1.5;
-  opacity: 0.5;
-}
-.section__subtitle a {
-  color: inherit;
-}
-
 .project-carousel {
   position: relative;
-  padding: 50px 0;
+  padding: 50px;
 }
 
 .project-strip {
@@ -45,35 +17,38 @@
 }
 
 .project-screen {
-  width: 768px;
+  width: 100%;
+  height: auto;
+  /*
+    width: 768px;
   height: 451px;
+   */
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  margin: auto;
+  margin: 10px;
 }
 .project-screen .project-detail {
   position: absolute;
   left: 0;
   right: 0;
   max-width: 578px;
-  width: auto;
+  width: 100%;
   height: auto;
   margin: 32px auto 0;
   z-index: 1;
   background-color: #333;
 }
-/*.project-detail img {
-  max-width: 100%;
-  width: 200px;
+.project-detail img {
+  width: 10%;
   height: auto;
-}*/
+}
 .project-screen .screen-frame {
   content: " ";
-  width: 768px;
-  height: 451px;
+  width: 100%;
+  height: auto;
   position: absolute;
   background-image: url("https://dl.dropboxusercontent.com/u/26808427/cdn/experiments/training/macbook-frame.png");
   background-repeat: no-repeat;
